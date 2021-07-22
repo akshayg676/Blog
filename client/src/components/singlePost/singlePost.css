@@ -1,0 +1,94 @@
+.singlePost {
+  flex: 9;
+}
+.singlePostWrapper {
+  padding: 20px;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.singlePostImg {
+  width: 100%;
+  height: 300px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.singlePostTitle {
+  text-align: center;
+  font-size: 45px;
+  margin: 90px auto;
+  text-transform: capitalize;
+}
+.singlePostTitleInput {
+  font-size: 45px;
+  margin: 90px auto;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.singlePostTitleInput:focus {
+  outline: none;
+}
+
+.singlePostEdit {
+  float: right;
+  font-size: 23px;
+}
+
+.singlePostIcon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.singlePostIcon:first-child {
+  color: teal;
+}
+.singlePostIcon:last-child {
+  color: tomato;
+}
+
+.singlePostInfo {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #e98074;
+}
+
+.singlePostDescription {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.singlePostDescription::first-letter {
+  margin-left: 20px;
+  font-size: 37px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.singlePostDescInput {
+  font-size: 22px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: none;
+}
+.singlePostDescInput:focus {
+  outline: none;
+}
+
+.singlePostButton {
+  border: none;
+  background-color: teal;
+  padding: 10px;
+  color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
+  float: right;
+}
