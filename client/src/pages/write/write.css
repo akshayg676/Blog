@@ -46,6 +46,12 @@
   font-size: 20px;
   height: 100vh;
 }
+.writeInputCat {
+  font-size: 20px;
+  outline: none;
+  border: none;
+  height: 5vh;
+}
 
 .WriteSubmit {
   position: absolute;

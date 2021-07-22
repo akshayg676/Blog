@@ -6,6 +6,7 @@ import { Context } from "../../context/Context.js";
 export default function Write() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [cat, setCat] = useState([]);
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
 
@@ -15,6 +16,7 @@ export default function Write() {
       username: user.username,
       title,
       desc,
+      categories: cat,
     };
     if (file) {
       const data = new FormData();
@@ -58,6 +60,14 @@ export default function Write() {
             autoFocus={true}
             onChange={(e) => setTitle(e.target.value)}
           />
+        </div>
+        <div className="writeFormGroup">
+          <textarea
+            placeholder="category"
+            type="text"
+            className="writeInputCat"
+            onChange={(e) => setCat(e.target.value)}
+          ></textarea>
         </div>
         <div className="writeFormGroup">
           <textarea
