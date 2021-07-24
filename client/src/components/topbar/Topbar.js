@@ -74,35 +74,35 @@ export default function Topbar() {
     // </div>
     <nav>
       <input type="checkbox" id="check" />
-      <label for="check" className="checkbtn">
+      <label htmlFor="check" className="checkbtn">
         <i className="fas fa-bars"></i>
       </label>
       <label className="logo">
         <img src={require(`../../assests/Logo-black .png`).default} alt="" />
       </label>
-      <ul class="ul">
+      <ul className="ul">
         <li className="topListItem">
           <Link className="link" to="/">
-            <a>Home</a>
+            <p>Home</p>
           </Link>
         </li>
         <li className="topListItem">
           <Link className="link" to="/">
-            <a>About</a>
+            <p>About</p>
           </Link>
         </li>
         <li className="topListItem">
           <Link className="link" to="/">
-            <a>Contact</a>
+            <p>Contact</p>
           </Link>
         </li>
         <li className="topListItem">
           <Link className="link" to="/">
-            <a>Write</a>
+            <p>Write</p>
           </Link>
         </li>
         <li className="topListItem" onClick={handleLogout}>
-          <a>{user && "logout"}</a>
+          <p>{user && "logout"}</p>
         </li>
 
         <li>
@@ -124,13 +124,13 @@ export default function Topbar() {
             <>
               <li className="topListItem">
                 <Link className="link" to="/login">
-                  <a>login</a>
+                  <p>login</p>
                 </Link>
               </li>
 
               <li className="topListItem">
                 <Link className="link" to="/register">
-                  <a>register</a>
+                  <p>register</p>
                 </Link>
               </li>
             </>
