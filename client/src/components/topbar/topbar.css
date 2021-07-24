@@ -1,4 +1,4 @@
-.top {
+/* .top {
   width: 100%;
   height: 100px;
   display: flex;
@@ -6,6 +6,7 @@
   position: sticky;
   top: 0;
   font-family: "Rubik", sans-serif;
+  z-index: 2;
 }
 
 .logo {
@@ -67,4 +68,120 @@
   color: #666;
   cursor: pointer;
   margin-left: 15px;
+} */
+
+nav {
+  font-family: "Rubik", sans-serif;
+  height: 80px;
+  width: 100%;
+  padding: 2em 0 5em 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
+.topImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.logo {
+  line-height: 80px;
+  padding: 0 60px;
+  font-size: 35px;
+}
+nav ul {
+  float: right;
+  list-style-type: none;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: auto;
+  position: relative;
+}
+.topListItem::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 20px;
+  left: 0;
+  background-color: rgb(37, 21, 21);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+.topListItem:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+nav ul li a {
+  font-size: 1em;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.checkbtn {
+  font-size: 2em;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 952px) {
+  .logo {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    z-index: 3;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  .logo,
+  ul a {
+    color: black;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+/* @media screen and (max-width: 320px) {
+  .logo {
+    font-size: 30px;
+  }
+} */

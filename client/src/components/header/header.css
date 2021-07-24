@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 header h1 strong {
+  font-family: "Megrim", cursive;
   font-style: normal;
   letter-spacing: 2px;
   text-transform: capitalize;
+}
+
+header span {
+  font-size: 0.5em;
+  font-weight: 100;
 }
 
 header {
@@ -28,11 +35,18 @@ header {
 header h1 {
   font-weight: normal;
   text-align: center;
-  z-index: 1;
+  z-index: 0;
 }
 
 header h1 strong {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 68px;
   letter-spacing: 4px;
+}
+@media screen and (max-width: 476px) {
+  header h1 strong {
+    /* font-weight: 400; */
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
 }

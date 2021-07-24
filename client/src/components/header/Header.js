@@ -8,7 +8,7 @@ export default function Header() {
         <strong>
           “Create content that teaches.”
           <br />
-          &nbsp;– Neil Patel
+          &nbsp;– <span>Neil Patel</span>
         </strong>
       </h1>
     </header>
